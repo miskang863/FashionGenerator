@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (5.4.0)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
+  - Shuffle-iOS (0.4.0)
+  - SwiftyGif (5.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - AlamofireImage (~> 4.1)
+  - Shuffle-iOS
+  - SwiftyGif
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - Shuffle-iOS
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  Shuffle-iOS: 87e4d3503475f3d684a375358649911e36fe139f
+  SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
+
+PODFILE CHECKSUM: 231f2b8920758893e49c40ee02e576eb5d97243b
+
+COCOAPODS: 1.10.0

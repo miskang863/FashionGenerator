@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A0A250B2567BC640062C71D /* ZircleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A250A2567BC640062C71D /* ZircleAPI.swift */; };
+		6A0A250D256E5A210062C71D /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A250C256E5A210062C71D /* Clothes.swift */; };
+		6A0A250F256FAA860062C71D /* ClothesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0A250E256FAA860062C71D /* ClothesItem.swift */; };
+		6A3A3808255A94E1000F47EC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3A3807255A94E1000F47EC /* Settings.storyboard */; };
+		6A3A380A255A97B5000F47EC /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A3A3809255A97B5000F47EC /* Favorites.storyboard */; };
+		6A66CB9625628B0600A92674 /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A66CB9525628B0600A92674 /* LogoAnimationView.swift */; };
+		6A66CBF82563D36500A92674 /* swiperUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A66CBF72563D36500A92674 /* swiperUIView.swift */; };
+		6A7E0F4D25667106009A89F2 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7E0F4C25667106009A89F2 /* FavoritesVC.swift */; };
+		6A7E0F4F2566713E009A89F2 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7E0F4E2566713E009A89F2 /* Favorite.swift */; };
+		6A7E0F512566715C009A89F2 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7E0F502566715C009A89F2 /* FavoritesTableViewCell.swift */; };
+		6A7E0F5325667168009A89F2 /* SingleFavoriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7E0F5225667168009A89F2 /* SingleFavoriteVC.swift */; };
+		6ADC8BFC256CDBFC002108F6 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADC8BFB256CDBFC002108F6 /* SettingsVC.swift */; };
+		6ADC8BFE2570E2AC002108F6 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADC8BFD2570E2AC002108F6 /* UserSettings.swift */; };
+		6AE81EF3255A8CC70029EC8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE81EF2255A8CC70029EC8D /* AppDelegate.swift */; };
+		6AE81EF5255A8CC70029EC8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE81EF4255A8CC70029EC8D /* SceneDelegate.swift */; };
+		6AE81EF7255A8CC70029EC8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE81EF6255A8CC70029EC8D /* ViewController.swift */; };
+		6AE81EFA255A8CC70029EC8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE81EF8255A8CC70029EC8D /* Main.storyboard */; };
+		6AE81EFD255A8CC70029EC8D /* FashionGenerator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6AE81EFB255A8CC70029EC8D /* FashionGenerator.xcdatamodeld */; };
+		6AE81EFF255A8CCB0029EC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE81EFE255A8CCB0029EC8D /* Assets.xcassets */; };
+		6AE81F02255A8CCB0029EC8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AE81F00255A8CCB0029EC8D /* LaunchScreen.storyboard */; };
+		6AE81F0D255A8CCB0029EC8D /* FashionGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE81F0C255A8CCB0029EC8D /* FashionGeneratorTests.swift */; };
+		6AE81F18255A8CCB0029EC8D /* FashionGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE81F17255A8CCB0029EC8D /* FashionGeneratorUITests.swift */; };
+		80E79B97068E7CEACF018F5A /* Pods_FashionGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2A149E0396E757F3E213ED /* Pods_FashionGenerator.framework */; };
+		AA3D503387CEDD4C7CD7B7B3 /* Pods_FashionGeneratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670A2BBD653B3BE07F3086B3 /* Pods_FashionGeneratorTests.framework */; };
+		D6A43382780B487936354CB6 /* Pods_FashionGenerator_FashionGeneratorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6CC56A5990CE3FC9B0E9EF /* Pods_FashionGenerator_FashionGeneratorUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AE81F09255A8CCB0029EC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE81EE7255A8CC70029EC8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE81EEE255A8CC70029EC8D;
+			remoteInfo = FashionGenerator;
+		};
+		6AE81F14255A8CCB0029EC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AE81EE7255A8CC70029EC8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE81EEE255A8CC70029EC8D;
+			remoteInfo = FashionGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EA19A6871E06CB407F0997A /* Pods-FashionGeneratorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionGeneratorTests.debug.xcconfig"; path = "Target Support Files/Pods-FashionGeneratorTests/Pods-FashionGeneratorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		327C1341A8E51171C55D389A /* Pods-FashionGenerator-FashionGeneratorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionGenerator-FashionGeneratorUITests.debug.xcconfig"; path = "Target Support Files/Pods-FashionGenerator-FashionGeneratorUITests/Pods-FashionGenerator-FashionGeneratorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B8ACA0EF2A9EFF3EF8F85D3 /* Pods-FashionGeneratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionGeneratorTests.release.xcconfig"; path = "Target Support Files/Pods-FashionGeneratorTests/Pods-FashionGeneratorTests.release.xcconfig"; sourceTree = "<group>"; };
+		670A2BBD653B3BE07F3086B3 /* Pods_FashionGeneratorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionGeneratorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0A250A2567BC640062C71D /* ZircleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZircleAPI.swift; sourceTree = "<group>"; };
+		6A0A250C256E5A210062C71D /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
+		6A0A250E256FAA860062C71D /* ClothesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesItem.swift; sourceTree = "<group>"; };
+		6A3A3807255A94E1000F47EC /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		6A3A3809255A97B5000F47EC /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		6A66CB9525628B0600A92674 /* LogoAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
+		6A66CBF72563D36500A92674 /* swiperUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiperUIView.swift; sourceTree = "<group>"; };
+		6A7E0F4C25667106009A89F2 /* FavoritesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		6A7E0F4E2566713E009A89F2 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		6A7E0F502566715C009A89F2 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		6A7E0F5225667168009A89F2 /* SingleFavoriteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleFavoriteVC.swift; sourceTree = "<group>"; };
+		6ADC8BFB256CDBFC002108F6 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		6ADC8BFD2570E2AC002108F6 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		6AE81EEF255A8CC70029EC8D /* FashionGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE81EF2255A8CC70029EC8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AE81EF4255A8CC70029EC8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6AE81EF6255A8CC70029EC8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6AE81EF9255A8CC70029EC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AE81EFC255A8CC70029EC8D /* FashionGenerator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FashionGenerator.xcdatamodel; sourceTree = "<group>"; };
+		6AE81EFE255A8CCB0029EC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AE81F01255A8CCB0029EC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AE81F03255A8CCB0029EC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE81F08255A8CCB0029EC8D /* FashionGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE81F0C255A8CCB0029EC8D /* FashionGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionGeneratorTests.swift; sourceTree = "<group>"; };
+		6AE81F0E255A8CCB0029EC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE81F13255A8CCB0029EC8D /* FashionGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE81F17255A8CCB0029EC8D /* FashionGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionGeneratorUITests.swift; sourceTree = "<group>"; };
+		6AE81F19255A8CCB0029EC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A7D27988EDC59C31237EE97 /* Pods-FashionGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionGenerator.release.xcconfig"; path = "Target Support Files/Pods-FashionGenerator/Pods-FashionGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		7FC6E691F0879C28F36A0390 /* Pods-FashionGenerator-FashionGeneratorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionGenerator-FashionGeneratorUITests.release.xcconfig"; path = "Target Support Files/Pods-FashionGenerator-FashionGeneratorUITests/Pods-FashionGenerator-FashionGeneratorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A6CC56A5990CE3FC9B0E9EF /* Pods_FashionGenerator_FashionGeneratorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionGenerator_FashionGeneratorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2A149E0396E757F3E213ED /* Pods_FashionGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEEF70A67130A5AC7C29B1D6 /* Pods-FashionGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionGenerator.debug.xcconfig"; path = "Target Support Files/Pods-FashionGenerator/Pods-FashionGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AE81EEC255A8CC70029EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E79B97068E7CEACF018F5A /* Pods_FashionGenerator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE81F05255A8CCB0029EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3D503387CEDD4C7CD7B7B3 /* Pods_FashionGeneratorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE81F10255A8CCB0029EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A43382780B487936354CB6 /* Pods_FashionGenerator_FashionGeneratorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DECF07EC261376833C7E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A149E0396E757F3E213ED /* Pods_FashionGenerator.framework */,
+				9A6CC56A5990CE3FC9B0E9EF /* Pods_FashionGenerator_FashionGeneratorUITests.framework */,
+				670A2BBD653B3BE07F3086B3 /* Pods_FashionGeneratorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68E5B67EB88167ECFCBB94D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEEF70A67130A5AC7C29B1D6 /* Pods-FashionGenerator.debug.xcconfig */,
+				7A7D27988EDC59C31237EE97 /* Pods-FashionGenerator.release.xcconfig */,
+				327C1341A8E51171C55D389A /* Pods-FashionGenerator-FashionGeneratorUITests.debug.xcconfig */,
+				7FC6E691F0879C28F36A0390 /* Pods-FashionGenerator-FashionGeneratorUITests.release.xcconfig */,
+				0EA19A6871E06CB407F0997A /* Pods-FashionGeneratorTests.debug.xcconfig */,
+				3B8ACA0EF2A9EFF3EF8F85D3 /* Pods-FashionGeneratorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A3A3806255A936F000F47EC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6AE81EF8255A8CC70029EC8D /* Main.storyboard */,
+				6A3A3807255A94E1000F47EC /* Settings.storyboard */,
+				6AE81F00255A8CCB0029EC8D /* LaunchScreen.storyboard */,
+				6A3A3809255A97B5000F47EC /* Favorites.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6AE81EE6255A8CC70029EC8D = {
+			isa = PBXGroup;
+			children = (
+				6AE81EF1255A8CC70029EC8D /* FashionGenerator */,
+				6AE81F0B255A8CCB0029EC8D /* FashionGeneratorTests */,
+				6AE81F16255A8CCB0029EC8D /* FashionGeneratorUITests */,
+				6AE81EF0255A8CC70029EC8D /* Products */,
+				68E5B67EB88167ECFCBB94D0 /* Pods */,
+				04DECF07EC261376833C7E4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6AE81EF0255A8CC70029EC8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AE81EEF255A8CC70029EC8D /* FashionGenerator.app */,
+				6AE81F08255A8CCB0029EC8D /* FashionGeneratorTests.xctest */,
+				6AE81F13255A8CCB0029EC8D /* FashionGeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AE81EF1255A8CC70029EC8D /* FashionGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				6A3A3806255A936F000F47EC /* Storyboards */,
+				6AE81EF2255A8CC70029EC8D /* AppDelegate.swift */,
+				6A7E0F4E2566713E009A89F2 /* Favorite.swift */,
+				6A7E0F5225667168009A89F2 /* SingleFavoriteVC.swift */,
+				6A7E0F502566715C009A89F2 /* FavoritesTableViewCell.swift */,
+				6A7E0F4C25667106009A89F2 /* FavoritesVC.swift */,
+				6A66CBF72563D36500A92674 /* swiperUIView.swift */,
+				6ADC8BFB256CDBFC002108F6 /* SettingsVC.swift */,
+				6ADC8BFD2570E2AC002108F6 /* UserSettings.swift */,
+				6A66CB9525628B0600A92674 /* LogoAnimationView.swift */,
+				6AE81EF4255A8CC70029EC8D /* SceneDelegate.swift */,
+				6AE81EF6255A8CC70029EC8D /* ViewController.swift */,
+				6AE81EFE255A8CCB0029EC8D /* Assets.xcassets */,
+				6AE81F03255A8CCB0029EC8D /* Info.plist */,
+				6AE81EFB255A8CC70029EC8D /* FashionGenerator.xcdatamodeld */,
+				6A0A250A2567BC640062C71D /* ZircleAPI.swift */,
+				6A0A250C256E5A210062C71D /* Clothes.swift */,
+				6A0A250E256FAA860062C71D /* ClothesItem.swift */,
+			);
+			path = FashionGenerator;
+			sourceTree = "<group>";
+		};
+		6AE81F0B255A8CCB0029EC8D /* FashionGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AE81F0C255A8CCB0029EC8D /* FashionGeneratorTests.swift */,
+				6AE81F0E255A8CCB0029EC8D /* Info.plist */,
+			);
+			path = FashionGeneratorTests;
+			sourceTree = "<group>";
+		};
+		6AE81F16255A8CCB0029EC8D /* FashionGeneratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6AE81F19255A8CCB0029EC8D /* Info.plist */,
+				6AE81F17255A8CCB0029EC8D /* FashionGeneratorUITests.swift */,
+			);
+			path = FashionGeneratorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AE81EEE255A8CC70029EC8D /* FashionGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE81F1C255A8CCB0029EC8D /* Build configuration list for PBXNativeTarget "FashionGenerator" */;
+			buildPhases = (
+				4B0E1CAABCF02CFFF98FCE27 /* [CP] Check Pods Manifest.lock */,
+				6AE81EEB255A8CC70029EC8D /* Sources */,
+				6AE81EEC255A8CC70029EC8D /* Frameworks */,
+				6AE81EED255A8CC70029EC8D /* Resources */,
+				B7B20CDEADBF9984F008C3C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FashionGenerator;
+			productName = FashionGenerator;
+			productReference = 6AE81EEF255A8CC70029EC8D /* FashionGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AE81F07255A8CCB0029EC8D /* FashionGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE81F1F255A8CCB0029EC8D /* Build configuration list for PBXNativeTarget "FashionGeneratorTests" */;
+			buildPhases = (
+				4E30789C663779A8A3838BB3 /* [CP] Check Pods Manifest.lock */,
+				6AE81F04255A8CCB0029EC8D /* Sources */,
+				6AE81F05255A8CCB0029EC8D /* Frameworks */,
+				6AE81F06255A8CCB0029EC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AE81F0A255A8CCB0029EC8D /* PBXTargetDependency */,
+			);
+			name = FashionGeneratorTests;
+			productName = FashionGeneratorTests;
+			productReference = 6AE81F08255A8CCB0029EC8D /* FashionGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AE81F12255A8CCB0029EC8D /* FashionGeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AE81F22255A8CCB0029EC8D /* Build configuration list for PBXNativeTarget "FashionGeneratorUITests" */;
+			buildPhases = (
+				86EE64445F3BA7CBF14B8782 /* [CP] Check Pods Manifest.lock */,
+				6AE81F0F255A8CCB0029EC8D /* Sources */,
+				6AE81F10255A8CCB0029EC8D /* Frameworks */,
+				6AE81F11255A8CCB0029EC8D /* Resources */,
+				C90D1BAECCCC27609AA287AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AE81F15255A8CCB0029EC8D /* PBXTargetDependency */,
+			);
+			name = FashionGeneratorUITests;
+			productName = FashionGeneratorUITests;
+			productReference = 6AE81F13255A8CCB0029EC8D /* FashionGeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AE81EE7255A8CC70029EC8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = iosdev;
+				TargetAttributes = {
+					6AE81EEE255A8CC70029EC8D = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					6AE81F07255A8CCB0029EC8D = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 6AE81EEE255A8CC70029EC8D;
+					};
+					6AE81F12255A8CCB0029EC8D = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 6AE81EEE255A8CC70029EC8D;
+					};
+				};
+			};
+			buildConfigurationList = 6AE81EEA255A8CC70029EC8D /* Build configuration list for PBXProject "FashionGenerator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AE81EE6255A8CC70029EC8D;
+			productRefGroup = 6AE81EF0255A8CC70029EC8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AE81EEE255A8CC70029EC8D /* FashionGenerator */,
+				6AE81F07255A8CCB0029EC8D /* FashionGeneratorTests */,
+				6AE81F12255A8CCB0029EC8D /* FashionGeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AE81EED255A8CC70029EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE81F02255A8CCB0029EC8D /* LaunchScreen.storyboard in Resources */,
+				6AE81EFF255A8CCB0029EC8D /* Assets.xcassets in Resources */,
+				6AE81EFA255A8CC70029EC8D /* Main.storyboard in Resources */,
+				6A3A3808255A94E1000F47EC /* Settings.storyboard in Resources */,
+				6A3A380A255A97B5000F47EC /* Favorites.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE81F06255A8CCB0029EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE81F11255A8CCB0029EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B0E1CAABCF02CFFF98FCE27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FashionGenerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E30789C663779A8A3838BB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FashionGeneratorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86EE64445F3BA7CBF14B8782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FashionGenerator-FashionGeneratorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7B20CDEADBF9984F008C3C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionGenerator/Pods-FashionGenerator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionGenerator/Pods-FashionGenerator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionGenerator/Pods-FashionGenerator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90D1BAECCCC27609AA287AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionGenerator-FashionGeneratorUITests/Pods-FashionGenerator-FashionGeneratorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionGenerator-FashionGeneratorUITests/Pods-FashionGenerator-FashionGeneratorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionGenerator-FashionGeneratorUITests/Pods-FashionGenerator-FashionGeneratorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AE81EEB255A8CC70029EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ADC8BFC256CDBFC002108F6 /* SettingsVC.swift in Sources */,
+				6ADC8BFE2570E2AC002108F6 /* UserSettings.swift in Sources */,
+				6A7E0F5325667168009A89F2 /* SingleFavoriteVC.swift in Sources */,
+				6A0A250F256FAA860062C71D /* ClothesItem.swift in Sources */,
+				6A7E0F4D25667106009A89F2 /* FavoritesVC.swift in Sources */,
+				6AE81EFD255A8CC70029EC8D /* FashionGenerator.xcdatamodeld in Sources */,
+				6AE81EF7255A8CC70029EC8D /* ViewController.swift in Sources */,
+				6A66CB9625628B0600A92674 /* LogoAnimationView.swift in Sources */,
+				6A66CBF82563D36500A92674 /* swiperUIView.swift in Sources */,
+				6A0A250D256E5A210062C71D /* Clothes.swift in Sources */,
+				6A7E0F512566715C009A89F2 /* FavoritesTableViewCell.swift in Sources */,
+				6AE81EF3255A8CC70029EC8D /* AppDelegate.swift in Sources */,
+				6A7E0F4F2566713E009A89F2 /* Favorite.swift in Sources */,
+				6AE81EF5255A8CC70029EC8D /* SceneDelegate.swift in Sources */,
+				6A0A250B2567BC640062C71D /* ZircleAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE81F04255A8CCB0029EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE81F0D255A8CCB0029EC8D /* FashionGeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE81F0F255A8CCB0029EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE81F18255A8CCB0029EC8D /* FashionGeneratorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AE81F0A255A8CCB0029EC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AE81EEE255A8CC70029EC8D /* FashionGenerator */;
+			targetProxy = 6AE81F09255A8CCB0029EC8D /* PBXContainerItemProxy */;
+		};
+		6AE81F15255A8CCB0029EC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AE81EEE255A8CC70029EC8D /* FashionGenerator */;
+			targetProxy = 6AE81F14255A8CCB0029EC8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AE81EF8255A8CC70029EC8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE81EF9255A8CC70029EC8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AE81F00255A8CCB0029EC8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AE81F01255A8CCB0029EC8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AE81F1A255A8CCB0029EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AE81F1B255A8CCB0029EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AE81F1D255A8CCB0029EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEEF70A67130A5AC7C29B1D6 /* Pods-FashionGenerator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionGenerator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.miskang.FashionGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AE81F1E255A8CCB0029EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A7D27988EDC59C31237EE97 /* Pods-FashionGenerator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionGenerator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.miskang.FashionGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AE81F20255A8CCB0029EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA19A6871E06CB407F0997A /* Pods-FashionGeneratorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionGeneratorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.miskang.FashionGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionGenerator.app/FashionGenerator";
+			};
+			name = Debug;
+		};
+		6AE81F21255A8CCB0029EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8ACA0EF2A9EFF3EF8F85D3 /* Pods-FashionGeneratorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionGeneratorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.miskang.FashionGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionGenerator.app/FashionGenerator";
+			};
+			name = Release;
+		};
+		6AE81F23255A8CCB0029EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327C1341A8E51171C55D389A /* Pods-FashionGenerator-FashionGeneratorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionGeneratorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.miskang.FashionGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FashionGenerator;
+			};
+			name = Debug;
+		};
+		6AE81F24255A8CCB0029EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FC6E691F0879C28F36A0390 /* Pods-FashionGenerator-FashionGeneratorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FashionGeneratorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fi.metropolia.miskang.FashionGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FashionGenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AE81EEA255A8CC70029EC8D /* Build configuration list for PBXProject "FashionGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE81F1A255A8CCB0029EC8D /* Debug */,
+				6AE81F1B255A8CCB0029EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE81F1C255A8CCB0029EC8D /* Build configuration list for PBXNativeTarget "FashionGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE81F1D255A8CCB0029EC8D /* Debug */,
+				6AE81F1E255A8CCB0029EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE81F1F255A8CCB0029EC8D /* Build configuration list for PBXNativeTarget "FashionGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE81F20255A8CCB0029EC8D /* Debug */,
+				6AE81F21255A8CCB0029EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AE81F22255A8CCB0029EC8D /* Build configuration list for PBXNativeTarget "FashionGeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE81F23255A8CCB0029EC8D /* Debug */,
+				6AE81F24255A8CCB0029EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6AE81EFB255A8CC70029EC8D /* FashionGenerator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6AE81EFC255A8CC70029EC8D /* FashionGenerator.xcdatamodel */,
+			);
+			currentVersion = 6AE81EFC255A8CC70029EC8D /* FashionGenerator.xcdatamodel */;
+			path = FashionGenerator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6AE81EE7255A8CC70029EC8D /* Project object */;
+}

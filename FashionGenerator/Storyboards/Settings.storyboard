@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cuT-Qi-gdI">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SettingsVC-->
+        <scene sceneID="WUO-Uj-nve">
+            <objects>
+                <viewController title="SettingsVC" id="VV0-hQ-cEi" customClass="SettingsVC" customModule="FashionGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o4o-1V-gFz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to buy?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76q-8j-CbQ">
+                                <rect key="frame" x="37.5" y="50" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 - 50€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AnX-ya-c5f">
+                                <rect key="frame" x="101" y="86" width="173" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="38" id="Ryz-kK-FZv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="P1F-lA-YS6">
+                                <rect key="frame" x="61" y="124" width="253" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="29" id="b2E-cJ-5KK"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="priceSlider:" destination="VV0-hQ-cEi" eventType="valueChanged" id="3cX-Ne-dmH"/>
+                                </connections>
+                            </slider>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCl-7b-Nsc">
+                                <rect key="frame" x="24.5" y="449" width="173" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="twg-XZ-7sh"/>
+                                </constraints>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8kD-P3-Nms" userLabel="The Mother Stack">
+                                <rect key="frame" x="24.5" y="225.5" width="326" height="216"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-D2-U04" userLabel="Top Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgy-V8-vIH">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="64"/>
+                                                <state key="normal" title="Jackets"/>
+                                                <connections>
+                                                    <action selector="jacketsButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="Gmh-BX-Sho"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoZ-UE-3Jm">
+                                                <rect key="frame" x="87" y="0.0" width="50.5" height="64"/>
+                                                <state key="normal" title="Skirts"/>
+                                                <connections>
+                                                    <action selector="skirtsButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="bgb-xp-0Qm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbU-zM-OJ7">
+                                                <rect key="frame" x="157.5" y="0.0" width="81" height="64"/>
+                                                <state key="normal" title="Sweaters"/>
+                                                <connections>
+                                                    <action selector="sweatersButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="81U-sC-Gjb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylw-r0-weX">
+                                                <rect key="frame" x="258.5" y="0.0" width="67.5" height="64"/>
+                                                <state key="normal" title="Shirts"/>
+                                                <connections>
+                                                    <action selector="shirtsButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="RU7-5j-VQO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" distribution="fillEqually"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vN9-ks-WF9" userLabel="Mid Stack">
+                                        <rect key="frame" x="0.0" y="76" width="326" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbe-r0-a1V">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="Ofa-F4-32Y"/>
+                                                    <constraint firstAttribute="width" constant="64" id="U8H-UW-yoH"/>
+                                                </constraints>
+                                                <state key="normal" title="Blazers"/>
+                                                <connections>
+                                                    <action selector="blazersButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="Y85-1T-K36"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTw-yL-MeG">
+                                                <rect key="frame" x="84" y="0.0" width="67.5" height="64"/>
+                                                <state key="normal" title="Blouses"/>
+                                                <connections>
+                                                    <action selector="blousesButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="fPw-Sp-lWr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iau-AB-onL">
+                                                <rect key="frame" x="171.5" y="0.0" width="49" height="64"/>
+                                                <state key="normal" title="Pants"/>
+                                                <connections>
+                                                    <action selector="pantsButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="484-We-Wz3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-X2-UYH">
+                                                <rect key="frame" x="240.5" y="0.0" width="85.5" height="64"/>
+                                                <state key="normal" title="Dresses"/>
+                                                <connections>
+                                                    <action selector="dressesButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="kcT-1a-g00"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xAo-qX-nJO" userLabel="Bottom Stack">
+                                        <rect key="frame" x="0.0" y="152" width="326" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiM-hh-83E">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="64"/>
+                                                <state key="normal" title="Others"/>
+                                                <connections>
+                                                    <action selector="othersButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="sb2-pN-AgL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs4-zw-7aS">
+                                                <rect key="frame" x="80" y="0.0" width="54.5" height="64"/>
+                                                <state key="normal" title="Shoes"/>
+                                                <connections>
+                                                    <action selector="shoesButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="kp5-qB-DhE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qb-8w-Jmt">
+                                                <rect key="frame" x="154.5" y="0.0" width="90.5" height="64"/>
+                                                <state key="normal" title="Jumpsuits"/>
+                                                <connections>
+                                                    <action selector="jumpsuitsButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="Smc-52-koS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuA-Kd-3t1">
+                                                <rect key="frame" x="265" y="0.0" width="61" height="64"/>
+                                                <state key="normal" title="Bags"/>
+                                                <connections>
+                                                    <action selector="bagsButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="E5u-lF-Cnm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91n-xB-1tu">
+                                <rect key="frame" x="205.5" y="449" width="145" height="176"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="VV0-hQ-cEi" eventType="touchUpInside" id="nZl-LC-KmG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pCl-7b-Nsc" firstAttribute="top" secondItem="8kD-P3-Nms" secondAttribute="bottom" constant="7.5" id="2FQ-ve-ga3"/>
+                            <constraint firstItem="76q-8j-CbQ" firstAttribute="centerX" secondItem="o4o-1V-gFz" secondAttribute="centerX" id="34R-Dy-AYZ"/>
+                            <constraint firstItem="AnX-ya-c5f" firstAttribute="top" relation="lessThanOrEqual" secondItem="76q-8j-CbQ" secondAttribute="bottom" constant="8" id="8fC-xF-3C2"/>
+                            <constraint firstItem="P1F-lA-YS6" firstAttribute="leading" secondItem="mmg-y4-6cq" secondAttribute="leading" constant="63" id="AfC-xd-xDl"/>
+                            <constraint firstItem="91n-xB-1tu" firstAttribute="leading" secondItem="pCl-7b-Nsc" secondAttribute="trailing" constant="8" id="Bv1-wB-af8"/>
+                            <constraint firstItem="8kD-P3-Nms" firstAttribute="centerX" secondItem="o4o-1V-gFz" secondAttribute="centerX" id="CG0-3w-QXP"/>
+                            <constraint firstItem="91n-xB-1tu" firstAttribute="trailing" secondItem="8kD-P3-Nms" secondAttribute="trailing" id="I0o-2E-KjV"/>
+                            <constraint firstItem="AnX-ya-c5f" firstAttribute="leading" secondItem="mmg-y4-6cq" secondAttribute="leading" constant="101" id="L9n-qZ-hcE"/>
+                            <constraint firstItem="pCl-7b-Nsc" firstAttribute="leading" secondItem="8kD-P3-Nms" secondAttribute="leading" id="OHY-ZI-Th6"/>
+                            <constraint firstItem="76q-8j-CbQ" firstAttribute="top" secondItem="mmg-y4-6cq" secondAttribute="top" constant="6" id="OSf-Do-OCO"/>
+                            <constraint firstItem="P1F-lA-YS6" firstAttribute="top" secondItem="AnX-ya-c5f" secondAttribute="bottom" constant="8" id="Q2o-Cf-vfq"/>
+                            <constraint firstItem="P1F-lA-YS6" firstAttribute="centerX" secondItem="AnX-ya-c5f" secondAttribute="centerX" id="Ta1-YI-cxk"/>
+                            <constraint firstItem="mmg-y4-6cq" firstAttribute="bottom" secondItem="pCl-7b-Nsc" secondAttribute="bottom" constant="42" id="Y7m-xt-hO7"/>
+                            <constraint firstItem="AnX-ya-c5f" firstAttribute="top" secondItem="76q-8j-CbQ" secondAttribute="bottom" constant="6" id="aoa-MN-93J"/>
+                            <constraint firstItem="91n-xB-1tu" firstAttribute="bottom" secondItem="pCl-7b-Nsc" secondAttribute="bottom" id="d2T-EX-vXN"/>
+                            <constraint firstItem="AnX-ya-c5f" firstAttribute="centerX" secondItem="76q-8j-CbQ" secondAttribute="centerX" id="eW2-pi-5Vc"/>
+                            <constraint firstItem="91n-xB-1tu" firstAttribute="top" secondItem="pCl-7b-Nsc" secondAttribute="top" id="wG5-eJ-mZj"/>
+                            <constraint firstItem="8kD-P3-Nms" firstAttribute="centerY" secondItem="o4o-1V-gFz" secondAttribute="centerY" id="yKT-st-CL4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mmg-y4-6cq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="pwo-3z-rUi"/>
+                    <connections>
+                        <outlet property="bagsButton" destination="LuA-Kd-3t1" id="3tF-2W-NTd"/>
+                        <outlet property="blazersButton" destination="Sbe-r0-a1V" id="W5F-5e-OiN"/>
+                        <outlet property="blousesButton" destination="zTw-yL-MeG" id="m0r-jq-C3e"/>
+                        <outlet property="dressesButton" destination="hKR-X2-UYH" id="eeh-L4-1kj"/>
+                        <outlet property="jacketsButton" destination="zgy-V8-vIH" id="DDZ-jA-usW"/>
+                        <outlet property="jumpsuitsButton" destination="4qb-8w-Jmt" id="h7x-08-f76"/>
+                        <outlet property="othersButton" destination="WiM-hh-83E" id="VhK-f9-8HM"/>
+                        <outlet property="pantsButton" destination="Iau-AB-onL" id="lBK-kK-PIw"/>
+                        <outlet property="priceLabel" destination="AnX-ya-c5f" id="U3A-Ax-U2F"/>
+                        <outlet property="saveButton" destination="91n-xB-1tu" id="bM1-o4-TU5"/>
+                        <outlet property="shirtsButton" destination="Ylw-r0-weX" id="3mj-oO-O6F"/>
+                        <outlet property="shoesButton" destination="cs4-zw-7aS" id="KSb-Ug-a9n"/>
+                        <outlet property="sizePicker" destination="pCl-7b-Nsc" id="MmG-Bn-gSg"/>
+                        <outlet property="skirtsButton" destination="XoZ-UE-3Jm" id="Kax-cn-eup"/>
+                        <outlet property="sweatersButton" destination="UbU-zM-OJ7" id="Rue-i4-VOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPe-Nm-u98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="3.1484257871064472"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RTN-JZ-mdN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cuT-Qi-gdI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yb7-ar-d2t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VV0-hQ-cEi" kind="relationship" relationship="rootViewController" id="avO-75-2yZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJj-dm-GRI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+</document>
